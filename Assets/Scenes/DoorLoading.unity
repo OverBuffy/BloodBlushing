@@ -400,7 +400,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746425528}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: a1021b1eb20f53140935aae00cd1b3f0, type: 2}
   m_CullingMode: 0
@@ -614,6 +614,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140833953817275108, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_LeftGrabMoveProvider
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140833953817275108, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_RightGrabMoveProvider
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3127728407712097236, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}

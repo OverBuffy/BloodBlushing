@@ -1,30 +1,48 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 
 public class Dialogue : MonoBehaviour
 {
-    AudioSource mainAudio;
+    [SerializeField] private AudioSource dialogueAudio;
     [SerializeField] private GameObject canvas;
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private string dialogueLine;
     [SerializeField] private float showSpeed;
 
+    [SerializeField] private AudioSource mainMusic;
+    [SerializeField] private AudioSource backgroundMusic;
+
     private void Start()
     {
-        mainAudio = GetComponent<AudioSource>();
+        dialogueAudio = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            mainAudio.Play();
+            dialogueAudio.Play();
             canvas.SetActive(true);
             StopAllCoroutines();
             StartCoroutine(StartDialogue());
+            mainMusic.Stop();
+
+            if(backgroundMusic != null) backgroundMusic.Play();
         }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(dialogueText.text == dialogueLine) dialogueAudio.Stop();
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        mainMusic.Play();
+        if(backgroundMusic!= null) backgroundMusic.Stop();
     }
 
     public IEnumerator StartDialogue()
