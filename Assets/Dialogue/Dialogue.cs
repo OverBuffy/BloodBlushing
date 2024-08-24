@@ -41,6 +41,7 @@ public class Dialogue : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        canvas.SetActive(false);
         mainMusic.Play();
         if(backgroundMusic!= null) backgroundMusic.Stop();
     }

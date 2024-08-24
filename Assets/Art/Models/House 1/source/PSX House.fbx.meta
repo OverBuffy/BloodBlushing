@@ -3,7 +3,42 @@ guid: cd13129a876d7424ba9e0d17887cf60b
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Concrete
+    second: {fileID: 2100000, guid: 73836233b5353e34693304df2dba6465, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door
+    second: {fileID: 2100000, guid: 1f9e85ccf0866264c86951bd9660d306, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Painted Wood
+    second: {fileID: 2100000, guid: 0a7c182e601c2a049b717cda807e6932, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof
+    second: {fileID: 2100000, guid: d9d1df6778882b74b87f35f1fa69ff6d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Slab
+    second: {fileID: 2100000, guid: fa0ecd558718f334c870ee091696468b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window
+    second: {fileID: 2100000, guid: f9c2c5a677a6e3c45a28dfe1b35f2dc6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks
+    second: {fileID: 2100000, guid: 86e3c559142a53147a37218ad75ecd93, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
