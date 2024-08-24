@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class DoorEnter : MonoBehaviour
 {
+    [SerializeField] private int sceneNumber;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(sceneNumber);
         }
     }
 }

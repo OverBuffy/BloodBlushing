@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class FloppaSpawner : MonoBehaviour
 {
+    [SerializeField] AudioClip dangerOst;
     [SerializeField] private Transform[] positions;
     [SerializeField] private GameObject floppaPrefab;
 
@@ -25,8 +26,10 @@ public class FloppaSpawner : MonoBehaviour
 
             }
             isFirst = false;
+            GetComponent<AudioSource>().clip = dangerOst;
             GetComponent<AudioSource>().Play();
+
         }
-        
+
     }
 }
