@@ -10,8 +10,9 @@ public class Enemy : MonoBehaviour
     public ParticleSystem hitParticles;
     [SerializeField] private ParticleSystem deathParticles;
     [SerializeField] private float enemyDamage;
-    private AudioSource audioSource;
     [SerializeField] private float health = 50;
+    private AudioSource audioSource;
+    private float speed = 2;
 
     public UnityEvent onDamaged;
     public UnityEvent onDeath;
@@ -31,13 +32,19 @@ public class Enemy : MonoBehaviour
         {
             animator.SetBool("IsRun", true);
         }
+        if (isReady == false)
+        {
+            speed = 0;
+        }
+        else speed = 2;
         transform.localRotation = Quaternion.Slerp(transform.localRotation, 
         Quaternion.LookRotation(target.position - transform.position), 
         10 * Time.deltaTime);
         
         float yRotation = transform.eulerAngles.y;
         transform.eulerAngles = new Vector3(0, yRotation, 0);
-        transform.position = Vector3.MoveTowards(transform.position, target.position, Time.deltaTime * 2);
+        transform.position = Vector3.MoveTowards(transform.position, target.position, Time.deltaTime * speed);
+
     }
 
     private void OnTriggerStay(Collider other)
