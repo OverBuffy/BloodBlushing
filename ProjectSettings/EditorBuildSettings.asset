@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/DoorLoading.unity
+    guid: 66c94b3246ace9e4396fa70231e5ed86
+  - enabled: 1
+    path: Assets/Scenes/House.unity
+    guid: ac738315b71bd3046ac8063e5ef2c780
+  - enabled: 1
+    path: Assets/Scenes/OutDoor.unity
+    guid: 5b8803dd2d84a7c47af0767ab97d0fb5
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f790156ad8b0df448ba6f751e207a646,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f1d3c92ebb3713b4c9873a930e7897f0,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 48f7d742b2e207f4089316e797d88cc1,
+      type: 2}
