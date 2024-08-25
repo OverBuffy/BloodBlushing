@@ -1093,7 +1093,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 90, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &275557786
 MonoBehaviour:
@@ -1115,10 +1115,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: "\u0410\u0423\u0410\u0423\u0410\u0423"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a887703904ceacd4a8bc026a37850f01, type: 2}
-  m_sharedMaterial: {fileID: -1339517252375130126, guid: a887703904ceacd4a8bc026a37850f01,
+  m_fontAsset: {fileID: 11400000, guid: 08bdf4feef9a1e8458e810d6f1f05666, type: 2}
+  m_sharedMaterial: {fileID: 7347293253025560806, guid: 08bdf4feef9a1e8458e810d6f1f05666,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1229,7 +1229,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 90, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &286472711
 MonoBehaviour:
@@ -1251,10 +1251,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: "\u0410\u0423\u0410\u0423\u0410\u0423\u0410\u0423"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a887703904ceacd4a8bc026a37850f01, type: 2}
-  m_sharedMaterial: {fileID: -1339517252375130126, guid: a887703904ceacd4a8bc026a37850f01,
+  m_fontAsset: {fileID: 11400000, guid: 08bdf4feef9a1e8458e810d6f1f05666, type: 2}
+  m_sharedMaterial: {fileID: 7347293253025560806, guid: 08bdf4feef9a1e8458e810d6f1f05666,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1279,7 +1279,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17.05
+  m_fontSize: 25
   m_fontSizeBase: 16.79
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10881,7 +10881,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 89.46, y: 90.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1603916822
 MonoBehaviour:
@@ -10903,10 +10903,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: "\u0410\u0443\u0430\u0443\u0443\u0430\u0443"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a887703904ceacd4a8bc026a37850f01, type: 2}
-  m_sharedMaterial: {fileID: -1339517252375130126, guid: a887703904ceacd4a8bc026a37850f01,
+  m_fontAsset: {fileID: 11400000, guid: 08bdf4feef9a1e8458e810d6f1f05666, type: 2}
+  m_sharedMaterial: {fileID: 7347293253025560806, guid: 08bdf4feef9a1e8458e810d6f1f05666,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}

@@ -238,6 +238,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: knife Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8097650140712792704, guid: 874d8f7067e56a54bbe00df74a3f8ec1,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -786,7 +791,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 190, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &267899500
 MonoBehaviour:
@@ -810,8 +815,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0410\u0423\u0410\u0423\u0410\u0423\u0410\u0423\u0410\u0423"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a887703904ceacd4a8bc026a37850f01, type: 2}
-  m_sharedMaterial: {fileID: -1339517252375130126, guid: a887703904ceacd4a8bc026a37850f01,
+  m_fontAsset: {fileID: 11400000, guid: 08bdf4feef9a1e8458e810d6f1f05666, type: 2}
+  m_sharedMaterial: {fileID: 7347293253025560806, guid: 08bdf4feef9a1e8458e810d6f1f05666,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -836,7 +841,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 37.95
+  m_fontSize: 34.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1748,7 +1753,19 @@ MonoBehaviour:
   healthText: {fileID: 1403060400}
   onDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1352480138}
+        m_TargetAssemblyTypeName: StoryEndManager, Assembly-CSharp
+        m_MethodName: StartBadEnding
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onAttacked:
     m_PersistentCalls:
       m_Calls: []
@@ -5345,9 +5362,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a53091d0a9d856438fecb91848d13f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1352480137}
-  g_clip: {fileID: 0}
-  b_clip: {fileID: 0}
 --- !u!1 &1370960644
 GameObject:
   m_ObjectHideFlags: 0
@@ -5476,7 +5490,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.8, y: -0.9}
-  m_SizeDelta: {x: 500, y: 50}
+  m_SizeDelta: {x: 543.9, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1403060400
 MonoBehaviour:
@@ -5498,12 +5512,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'HEALTH 100/200
-
-'
+  m_text: "\u0416\u0418\u0417\u041D\u0415\u041D\u041D\u0410\u042F \u0421\u0418\u041B\u0410
+    100/200\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9ee6b8073a829b640b428329f2b53005, type: 2}
-  m_sharedMaterial: {fileID: 3262049039721981676, guid: 9ee6b8073a829b640b428329f2b53005,
+  m_fontAsset: {fileID: 11400000, guid: 08bdf4feef9a1e8458e810d6f1f05666, type: 2}
+  m_sharedMaterial: {fileID: 7347293253025560806, guid: 08bdf4feef9a1e8458e810d6f1f05666,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5528,15 +5541,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 32.4
+  m_fontSizeBase: 32.4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -6161,7 +6174,19 @@ MonoBehaviour:
       m_Calls: []
   onDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1352480138}
+        m_TargetAssemblyTypeName: StoryEndManager, Assembly-CSharp
+        m_MethodName: StartGoodEnding
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   isReady: 1
 --- !u!195 &1427747580
 NavMeshAgent:
@@ -7773,7 +7798,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1990721731
 MonoBehaviour:
   m_ObjectHideFlags: 0
