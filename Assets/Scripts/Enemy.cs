@@ -17,12 +17,17 @@ public class Enemy : MonoBehaviour
     public UnityEvent onDeath;
 
     private Transform target;
-    private bool isReady = true;
+
+    public bool isReady = true;
 
     private void Start()
     {
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         animator = GetComponent<Animator>();
+        if(animator == null)
+        {
+            animator = GetComponentInChildren<Animator>();
+        }
         target = GameObject.FindGameObjectWithTag("Player").transform;
         audioSource = GetComponent<AudioSource>();
     }
@@ -30,6 +35,7 @@ public class Enemy : MonoBehaviour
     {
         if (target != null)
         {
+            
             animator.SetBool("IsRun", true);
         }
         if (isReady == false)

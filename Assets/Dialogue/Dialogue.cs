@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Xml.Serialization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
@@ -58,5 +59,24 @@ public class Dialogue : MonoBehaviour
             dialogueText.text += c;
             yield return new WaitForSeconds(showSpeed); 
         }
+    }
+
+    public void StartDialogueVoid()
+    {
+        dialogueAudio.Play();
+        canvas.SetActive(true);
+        StopAllCoroutines();
+        StartCoroutine(StartDialogue());
+        mainMusic.Stop();
+
+        if (backgroundMusic != null) backgroundMusic.Play();
+    }
+    public void StopDialogueVoid()
+    {
+        dialogueAudio.Stop();
+        canvas.SetActive(false);
+        mainMusic.Play();
+        if (backgroundMusic != null) backgroundMusic.Stop();
+        StopAllCoroutines();
     }
 }
