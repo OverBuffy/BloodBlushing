@@ -448,7 +448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b31938a0ffe891498624811254418c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNumber: 6
+  sceneNumber: 7
 --- !u!95 &818888614
 Animator:
   serializedVersion: 5
@@ -1819,7 +1819,9 @@ PrefabInstance:
     - {fileID: 2140833953817275108, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
     - {fileID: 3414492871629994245, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
     - {fileID: 5045211221932542186, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 146340753648116383, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+    - {fileID: 122084618895949332, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9014170783809206332, guid: 895f6f3c2d334633b5800312285058d2,
