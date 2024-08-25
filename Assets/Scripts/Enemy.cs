@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class Enemy : MonoBehaviour
 {
+    private UnityEngine.AI.NavMeshAgent agent;
     Animator animator;
     public ParticleSystem hitParticles;
     [SerializeField] private ParticleSystem deathParticles;
@@ -22,6 +24,7 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
+        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         animator = GetComponent<Animator>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
         audioSource = GetComponent<AudioSource>();
@@ -34,16 +37,16 @@ public class Enemy : MonoBehaviour
         }
         if (isReady == false)
         {
-            speed = 0;
+            agent.speed = 0;
         }
-        else speed = 2;
+        else agent.speed = 2;
         transform.localRotation = Quaternion.Slerp(transform.localRotation, 
         Quaternion.LookRotation(target.position - transform.position), 
         10 * Time.deltaTime);
         
         float yRotation = transform.eulerAngles.y;
         transform.eulerAngles = new Vector3(0, yRotation, 0);
-        transform.position = Vector3.MoveTowards(transform.position, target.position, Time.deltaTime * speed);
+        agent.destination = target.position;
 
     }
 
