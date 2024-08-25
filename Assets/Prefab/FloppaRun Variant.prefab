@@ -101,7 +101,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 886a91b9ce32cb445b8a0911e3b2a193,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.776
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 886a91b9ce32cb445b8a0911e3b2a193,
         type: 3}
@@ -111,7 +111,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 886a91b9ce32cb445b8a0911e3b2a193,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.4446029
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 886a91b9ce32cb445b8a0911e3b2a193,
         type: 3}
@@ -255,6 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88d2fe2e463c5464fbc0dd909138f4d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   hitParticles: {fileID: 7095620159817690679}
   deathParticles: {fileID: 2196582117454963118}
   enemyDamage: 5

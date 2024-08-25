@@ -3,32 +3,21 @@ using UnityEngine;
 public class FloppaSpawner : MonoBehaviour
 {
     [SerializeField] AudioClip dangerOst;
-    [SerializeField] private Transform[] positions;
-    [SerializeField] private GameObject floppaPrefab;
-
-    private FloppaCounter floppaCounter;
-
+    [SerializeField] private GameObject floppas;
     private bool isFirst = true;
     private void Start()
     {
-        floppaCounter = GetComponent<FloppaCounter>();
+        SpawnFloppas();
     }
 
     public void SpawnFloppas()
     {
         if (isFirst == true) 
         {
-            for (int i = 0; i < positions.Length; i++)
-            {
-                GameObject spawnedFloppa = Instantiate(floppaPrefab, positions[i]);
-                spawnedFloppa.GetComponent<Enemy>().onDeath.
-                    AddListener(floppaCounter.AddDeadFloppa);
-
-            }
-            isFirst = false;
+            floppas.SetActive(true);
             GetComponent<AudioSource>().clip = dangerOst;
             GetComponent<AudioSource>().Play();
-
+            isFirst = false;
         }
 
     }
