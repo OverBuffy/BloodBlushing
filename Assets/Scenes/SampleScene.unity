@@ -1778,8 +1778,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5.71721, y: 2.7630672, z: 4.25502}
-  m_Center: {x: -0.086988926, y: 0.8815336, z: 1.6275101}
+  m_Size: {x: 8.585477, y: 2.7630672, z: 4.8545895}
+  m_Center: {x: -0.7366109, y: 0.8815336, z: 1.9272947}
 --- !u!1 &373697351
 GameObject:
   m_ObjectHideFlags: 0
@@ -8058,8 +8058,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.107837, y: 2.875659, z: 4.524847}
-  m_Center: {x: -0.02096729, y: 0.9378295, z: 1.1271871}
+  m_Size: {x: 7.4472265, y: 2.875659, z: 5.4522405}
+  m_Center: {x: -1.0398922, y: 0.9378295, z: 1.590876}
 --- !u!114 &1236726474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14254,8 +14254,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.4554105, y: 2.5149267, z: 3.1554413}
-  m_Center: {x: -0.1758697, y: 0.75746334, z: 0.8024101}
+  m_Size: {x: 8.276583, y: 2.5149267, z: 5.534542}
+  m_Center: {x: 0.34598494, y: 0.75746334, z: 0.9944668}
 --- !u!82 &2129535553
 AudioSource:
   m_ObjectHideFlags: 0
