@@ -5,10 +5,6 @@ public class FloppaSpawner : MonoBehaviour
     [SerializeField] AudioClip dangerOst;
     [SerializeField] private GameObject floppas;
     private bool isFirst = true;
-    private void Start()
-    {
-        SpawnFloppas();
-    }
 
     public void SpawnFloppas()
     {

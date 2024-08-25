@@ -42,11 +42,15 @@ public class Dialogue : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        dialogueAudio.Stop();
-        canvas.SetActive(false);
-        mainMusic.Play();
-        if(backgroundMusic!= null) backgroundMusic.Stop();
-        StopAllCoroutines();
+        if (other.CompareTag("Player"))
+        {
+            dialogueAudio.Stop();
+            canvas.SetActive(false);
+            mainMusic.Play();
+            if(backgroundMusic!= null) backgroundMusic.Stop();
+            StopAllCoroutines();
+        }
+
     }
 
     public IEnumerator StartDialogue()
