@@ -37,7 +37,11 @@ public class Dialogue : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(dialogueText.text == dialogueLine) dialogueAudio.Stop();
+        if (dialogueText.text == dialogueLine)
+        {
+            dialogueAudio.Stop();
+            mainMusic.Play();
+        }
     }
 
     private void OnTriggerExit(Collider other)
