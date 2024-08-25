@@ -1,14 +1,11 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class Enemy : MonoBehaviour
 {
     private UnityEngine.AI.NavMeshAgent agent;
-    Animator animator;
+    public Animator animator;
     public ParticleSystem hitParticles;
     [SerializeField] private ParticleSystem deathParticles;
     [SerializeField] private float enemyDamage;
