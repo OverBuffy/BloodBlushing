@@ -1636,7 +1636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c973fe1c646d3134f9f6ee9d2ce61bfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueAudio: {fileID: 0}
+  dialogueAudio: {fileID: 371485874}
   canvas: {fileID: 696217743}
   dialogueText: {fileID: 275557786}
   dialogueLine: "\u041F\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u044E
